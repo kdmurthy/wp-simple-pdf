@@ -1,0 +1,15 @@
+{
+    "name": "kdmurthy/wp-simple-pdf",
+    "description": "WordPress bindings for mpdf",
+    "type": "library",
+    "license": "GPLV3",
+    "authors": [
+        {
+            "name": "Dakshinamurthy Karra",
+            "email": "dakshinamurthy.karra@jaliansystems.com"
+        }
+    ],
+    "require": {
+        "mpdf/mpdf": "^8.0"
+    }
+}
