@@ -53,7 +53,15 @@ Use `\WpSimplePDF\SimplePDF::url` method to create a link and display in anywher
 >   (int|WP_Post)(Optional) - Post ID or WP_Post object. Defaults to global $post.
 >
 > **$args**
->   (array) (Optional) Extra query arguments to add to the URL. Defaults to array() 
+>   (array) (Optional) Arguments for generating the link. defaults to:
+>
+```php
+	array(
+		'text'  => 'PDF', # The text link
+		'rel'   => 'nofollow',
+		'extra' => array() # The extra query arguments -- passed to url() method.
+	)
+```
 >
 > **$echo**
 >   (bool) (Optional) Whether to echo or return the url. Default value: false
